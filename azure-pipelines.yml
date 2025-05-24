@@ -1,0 +1,14 @@
+pool:
+  vmImage: 'ubuntu-24.04'
+
+steps:
+- checkout: self
+
+- script: |
+    set -e
+    #sudo apt install libbz2-dev libarchive-dev
+
+    cd mt-comp-test
+    ./1-prep.sh
+    ./2-test.sh
+  displayName: 'Run prep and test scripts'
