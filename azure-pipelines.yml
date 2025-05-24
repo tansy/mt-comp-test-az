@@ -8,7 +8,7 @@ steps:
     set -e
     #sudo apt install libbz2-dev libarchive-dev
 
-    cd mt-comp-test
-    ./1-prep.sh
-    ./2-test.sh
+    #cd mt-comp-test
+    sh ./1-prep.sh
+    sh ./2-test.sh
   displayName: 'Run prep and test scripts'
